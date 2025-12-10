@@ -106,12 +106,22 @@ body{
   padding:6px;
   gap:4px;
   margin-top:20px;
-  display:inline-flex;
+  display:flex;
+  flex-wrap: wrap;
   background:var(--surface);
   border-radius:8px;
   border:1px solid var(--border);
 }
-.seg-wrap{max-width:var(--content-max); margin:0 auto; display:flex; justify-content:center}
+.seg-wrap{
+	max-width:var(--content-max); 
+	margin:0 auto; 
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content:center;
+	align-content: center; 
+}
+
 .segmented.tabs .seg{
   font-size:13px;
   font-weight:500;
